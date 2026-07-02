@@ -1,0 +1,31 @@
+h1{
+    color: crimson;
+    text-align: center;
+}
+a{
+    padding: 50px;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(167, 235, 241);
+    text-align: center;
+}
+h3{
+    color:chocolate;
+    text-align: center;
+}
+Go{
+    background-color: rgb(255, 0, 21);
+}
+#Detail{
+    text-align: center;
+}
+#IITI {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    text-align: center;
+}
+
