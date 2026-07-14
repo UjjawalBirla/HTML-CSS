@@ -15,7 +15,7 @@
 
 .navbar {
     height: 70px;
-    background-color: #0f1111;
+    background-color: #6e8d8d;
     color: #fff;
     display: flex;
     justify-content: space-evenly;
@@ -170,11 +170,10 @@ span {
 =========================== */
 
 .hero-section {
-    background-image: url("images/box1.jpg");
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlgYzwaGLxzfLi4at77PZk4v24MGmnbSw6JY8K3wg-et-_pUSlOt0wLN71&s=10");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 350px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -307,7 +306,7 @@ span {
 }
 
 .foot-panel3 {
-    background-color: #192431;
+    background-color: #4d637e;
     border-top: 0.5px solid white;
     height: 70px;
     display: flex;
@@ -322,7 +321,7 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 80px;
+    width: 100px;
     height: 50px;
 }
 
