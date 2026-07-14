@@ -262,4 +262,102 @@
 // user2.submit()
 // user2.cancle()
   
+//////////////// Constructor //////////////////
+
+// class Employee 
+// {
+//     constructor(name)
+//     {
+//           console.log(`Employee ${name} has logged in`);
+//         this.name=name
+      
+//     }
+// login()
+// {
+//     console.log(`Employee has logged in`);
+// }
+// logout()
+// {
+//     console.log(`Employee has logged in`);
+// }
+// }
+
+// class Programmer extends Employee{
+    
+//     constructor(name)
+//     {
+//           console.log(`this is a new Employee ${name} has logged in`);
+//           super(name)
+      
+//     }
+//   requestCoffe(x)
+//     {
+//         console.log(`Employee has requested ${x} coffeed`)
+//     }
+// }
+// let e=new Programmer("user")
+// e.login()
+// e.logout()
+
+
+
+///////////  Static Method  ////////////
+
+// class Animal{
+//     constructor(name){
+//         this.name=Animal.capitalize(name)
+//     }
+
+//     walk(){
+//         alert("Animnal " + this.name + " is walking")
+//     }
+
+//     static capitalize(name){
+//         return name.charAt(0).toUpperCase()+name.substr(1,name.length)
+//     }
+// }
+
+// j=new Animal("jack")
+// j.walk();
+
+
+//////////////  Getter Setter Instance Operator   /////////////////
+
+// class Animal{
+//     constructor(name){
+//         this._name=name
+//     }
+
+//     flay(){
+//         console.log("flaying Birds in Sky")
+//     }
+//     get name(){
+//         return this._name
+//     }
+//     set name(newName){
+//         this._name=newName
+//     }
+// }
+
+// let j=new Animal("jack")
+// j.flay()
+// console.log(j.name)
+// j.name="AKOP"
+// console.log(j.name)
+
+/////////////// Destructure Operator ///////////////////
+
+// let arr=[3,4,5,6,7,24,42]
+// // let a=arr[0]
+// // let b=arr[1]
+// // let [a,b,c,d,...rest]=arr
+// // console.log(a,b,c,d,...rest)
+// // let [a, ,,d,...rest]=arr
+// // console.log(a,b,c,d,...rest)
+// // let {a,b}={a:1 , b:5}
+// // console.log(a,b)
+// let obj={...arr}
+// console.log(obj)
+
+
 

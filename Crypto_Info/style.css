@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border: 2px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+  width: 170px;
+}
+
+.search-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+}
+
+.search-box input {
+  border-radius: 25px;
+  background-color: rgb(138, 132, 132);
+}
+
+.search-box button {
+  border-radius: 25px;
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .search-box {
+    display: none;
+  }
+}
+
+.nav-link button {
+  border-radius: 25px;
+  white-space: nowrap;
+}
+a.nav-link {
+  padding: 2px;
+}
+
+/* Hero Section */
+.hero {
+  height: 75vh; /* 100vh की जगह 75vh */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1170&auto=format&fit=crop");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.dropdown-menu {
+  background-color: #222;
+  border: none;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Hero Text */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* Left side */
+  align-items: center;
+  padding-left: 50px; /* Left से थोड़ा space */
+}
+
+.hero-content {
+  color: rgb(239, 162, 48);
+  max-width: 600px;
+  text-align: left;
+  font-weight: 700;
+}
+.hero-content h5 {
+  color: rgb(219, 46, 11);
+  font-weight: 600;
+}
+.hero-content p {
+  color: rgb(202, 198, 197);
+  font-weight: 400;
+}
+
+.hero-content button {
+  margin: 20px;
+  padding: 10px;
+  color: azure;
+  font-weight: 600;
+}
+.hero-content button:hover {
+  color: black;
+}
+
+/* Service Boxs */
+
+.service-box {
+  background: #fff;
+  padding: 35px;
+  border-radius: 15px;
+
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+  transition: 0.4s;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 20px rgba(15, 6, 6, 0.8);
+}
+
+.icon i {
+  font-size: 55px;
+  color: #2ecc71;
+  transition: 0.4s;
+}
+
+/* Icon Down Effect */
+.service-box:hover .icon i {
+  transform: translateY(10px);
+}
+
+.content h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.content p {
+  color: #666;
+  line-height: 1.8;
+}
+
+/* About */
+
+.about {
+  padding: 80px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  padding: 15px 35px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.tab-btn.active {
+  background: #28a745;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background: #28a745;
+  color: white;
+}
+
+.animate {
+  animation: slideIn 0.5s ease;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.about {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.about-content {
+  padding-left: 40px;
+}
+
+.about-content h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #1b2b48;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.about-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+.explore-btn {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Login crypto Section */
+
+.contact-section {
+  background: url("images/contact-bg.jpg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  padding: 100px 0;
+
+  position: relative;
+}
+
+.contact-section::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  top: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(8, 20, 45, 0.82);
+}
+
+.contact-section .container {
+  position: relative;
+
+  z-index: 2;
+}
+
+.contact-img {
+  width: 100%;
+}
+
+.sub-title {
+  color: #ff6b1a;
+
+  font-size: 18px;
+
+  font-weight: 700;
+  margin-left: 0px;
+}
+
+.contact-section h2 {
+  color: #fff;
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  margin: 20px 0 40px;
+}
+
+.contact-section label {
+  color: #fff;
+
+  margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+  height: 55px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: none;
+
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #ddd;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+
+  background: rgba(255, 255, 255, 0.2);
+
+  color: #0a0101;
+}
+
+
+
+.btn-warning {
+  background: #ff6b1a;
+
+  border: none;
+
+  padding: 14px 35px;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background: #ff4d00;
+}
+
+/* footer */
+
+
+.footer{
+    background:#081b33;
+    color:#fff;
+    padding:70px 0 20px;
+}
+
+.footer h3,
+.footer h4{
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.footer p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.footer ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+.footer ul li a{
+    color:#ccc;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer ul li a:hover{
+    color:#00c853;
+    padding-left:5px;
+}
+
+.social-icons a{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    background:#122b4d;
+    color:#fff;
+    border-radius:50%;
+    margin-right:10px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    background:#00c853;
+    transform:translateY(-5px);
+}
+
+.footer hr{
+    border-color:#2d4666;
+    margin:40px 0 20px;
+}
+
+.copyright{
+    text-align:center;
+}
+
+.copyright p{
+    margin:0;
+    color:#aaa;
+}
+
+.copyright span{
+    color:#00c853;
+    font-weight:600;
+}
