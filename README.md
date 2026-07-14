@@ -10,6 +10,7 @@ This repository contains my practice projects built using HTML, CSS and JavaScri
 - Shopping Website
 - Capture Nature
 - Basic HTML Practice
+- Crypto Clone
 
 ## Technologies Used
 - HTML5
