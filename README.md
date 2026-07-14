@@ -16,6 +16,7 @@ This repository contains my practice projects built using HTML, CSS and JavaScri
 - HTML5
 - CSS3
 - JavaScript
+- Bootstrap
 
 ## Author
 Ujjawal Birla
