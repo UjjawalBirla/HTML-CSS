@@ -157,3 +157,4 @@ function showData(type, element){
 }
 
 showData("stocks",document.querySelector(".tab-btn"));
+

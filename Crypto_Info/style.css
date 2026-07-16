@@ -3,63 +3,156 @@
   padding: 0;
   box-sizing: border-box;
 }
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  border: 2px rgba(0, 0, 0, 0.8);
-  background-color: rgba(0, 0, 0, 0.5);
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background:#0e1b1e;
+    backdrop-filter: blur(8px);
+    padding: 10px 10px;
 }
 
-.navbar-brand img {
-  width: 170px;
+.navbar-brand img{
+    width:120px;
 }
 
-.search-box {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 420px;
+.navbar-nav{
+    align-items:center;
 }
 
-.search-box input {
-  border-radius: 25px;
-  background-color: rgb(138, 132, 132);
+.nav-link{
+    color:#fff !important;
+    font-size:16px;
+    font-weight:500;
+    margin:0 8px;
+    transition:.3s;
 }
 
-.search-box button {
-  border-radius: 25px;
-  white-space: nowrap;
+.nav-link:hover,
+.nav-link.active{
+    color:#00c853 !important;
 }
 
-@media (max-width: 992px) {
-  .search-box {
-    display: none;
-  }
+/* Search Box */
+
+.search-box{
+    width:300px;
+    margin:0 20px;
 }
 
-.nav-link button {
-  border-radius: 25px;
-  white-space: nowrap;
+.navbar-nav{
+    align-items:center;
 }
-a.nav-link {
-  padding: 2px;
+
+@media (max-width:992px){
+    .search-box{
+        width:100%;
+        margin:15px 0;
+    }
+}
+
+.search-box input{
+    background:#1c1c1c;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+}
+
+.search-box input::placeholder{
+    color:#bbb;
+}
+
+.search-box button{
+    border-radius:30px;
+    white-space:nowrap;
+}
+
+/* Dropdown */
+
+.dropdown-menu{
+    background:#081b33;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.dropdown-item{
+    color:#fff;
+    padding:10px 18px;
+    transition:.3s;
+}
+
+.dropdown-item:hover{
+    background:#00c853;
+    color:#fff;
+}
+
+.dropdown-item i{
+    margin-right:8px;
+}
+
+/* Contact Button */
+
+.btn-success{
+    border-radius:30px;
+    padding:10px 20px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-success:hover{
+    transform:translateY(-3px);
+}
+
+/* Body Space */
+
+body{
+    padding-top:90px;
+}
+
+/* Mobile */
+
+@media(max-width:992px){
+
+.search-box{
+    display:none;
+}
+
+.navbar-nav{
+    margin-top:15px;
+    text-align:center;
+}
+
+.nav-item{
+    margin:8px 0;
+}
+
+.btn-success{
+    width:100%;
+}
+
 }
 
 /* Hero Section */
 .hero {
-  height: 75vh; /* 100vh की जगह 75vh */
+  height: 100vh;
   background:
-    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1170&auto=format&fit=crop");
-
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("img_Crypto5.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  padding-left: 80px;
+  padding-left: 60px;
 }
 
 .dropdown-menu {
@@ -77,18 +170,7 @@ a.nav-link {
 }
 
 /* Hero Text */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-start; /* Left side */
-  align-items: center;
-  padding-left: 50px; /* Left से थोड़ा space */
-}
+
 
 .hero-content {
   color: rgb(239, 162, 48);
@@ -108,7 +190,7 @@ a.nav-link {
 .hero-content button {
   margin: 20px;
   padding: 10px;
-  color: azure;
+  color: azure; 
   font-weight: 600;
 }
 .hero-content button:hover {
@@ -117,15 +199,27 @@ a.nav-link {
 
 /* Service Boxs */
 
+.service-link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-link:hover{
+    color: inherit;
+}
+
+
 .service-box {
   background: #fff;
   padding: 35px;
   border-radius: 15px;
-
+  cursor: pointer;
   display: flex;
   gap: 25px;
   align-items: flex-start;
   transition: 0.4s;
+  
 }
 
 .service-box:hover {
@@ -147,11 +241,13 @@ a.nav-link {
 .content h3 {
   font-weight: 700;
   margin-bottom: 15px;
+   text-decoration: none;
 }
 
 .content p {
   color: #666;
   line-height: 1.8;
+   text-decoration: none;
 }
 
 /* About */
@@ -431,4 +527,8 @@ table th {
 .copyright span{
     color:#00c853;
     font-weight:600;
+}
+.footer ul li a{
+    display:inline-block;
+    transition:.3s;
 }

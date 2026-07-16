@@ -1,0 +1,176 @@
+
+
+/* Body Space */
+
+body{
+    padding-top:90px;
+}
+
+.hero-banner{
+    background:linear-gradient(rgba(8,27,51,.75),rgba(8,27,51,.75)),
+               url(images/banner.jpg);
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    text-align:center;
+    padding:120px 0 70px;
+}
+
+.hero-banner h1{
+    font-size:48px;
+    font-weight:700;
+}
+
+.hero-banner p{
+    font-size:20px;
+}
+
+.feature-card{
+    transition:.4s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+/* Mobile */
+
+
+/* ==========================
+   Services Page CSS
+========================== */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* Main Container */
+
+.container{
+    max-width:1200px;
+}
+
+/* Heading */
+
+h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.lead{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:50px;
+}
+
+/* Feature Cards */
+
+.row .col-md-6{
+    margin-bottom:30px;
+}
+
+.row .col-md-6 h4{
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.row .col-md-6 p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* Card Design */
+
+.col-md-6{
+    transition:.4s;
+}
+
+.col-md-6>div,
+.feature-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.feature-card:hover,
+.col-md-6:hover{
+    transform:translateY(-8px);
+}
+
+/* Icons */
+
+h4 i{
+    font-size:35px;
+    margin-right:10px;
+}
+
+/* Back Button */
+
+.btn-success{
+    padding:12px 35px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.btn-success:hover{
+    transform:translateY(-3px);
+}
+
+/* Section Box */
+
+.service-wrapper{
+    background:#fff;
+    border-radius:20px;
+    padding:50px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    margin-top:50px;
+}
+
+/* Animation */
+
+.service-wrapper{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+h1{
+font-size:32px;
+}
+
+.lead{
+font-size:16px;
+}
+
+.service-wrapper{
+padding:25px;
+}
+
+h4{
+font-size:20px;
+}
+
+}
